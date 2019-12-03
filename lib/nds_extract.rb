@@ -99,11 +99,12 @@ def movies_with_directors_set(source)
   # to have a :director_name key added to it.
  i = 0 
  allDirectors = []
- while i < source.length do 
-   directorArray = []
-   x = 0
-   while x < source[i].length do 
-   
+ while i < source.length do
+allDirectors[i] = movies_with_director_key(source[i][:name], source[i][:movies])
+binding.pry
+i += 1 
+end
+allDirectors
 end
 
 # ----------------    End of Your Code Region --------------------
